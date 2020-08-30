@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="CSS/MainLayout.css">
+    <link id = "color" rel="stylesheet" type="text/css" href="CSS/Color1.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Content.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Interaction.css">
+    <link rel="stylesheet" type="text/css" href="CSS/MyLayout.css">
+
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="JS/View.js"></script>
+
+    <title>Smiles Kindergarten</title>
+  </head>
+  <body>
+  <div id = wrapper>
+    <header>
+      <div id = logo></div>
+      <div id = switch_campus>
+
+        <div id = switch_campus_options>
+          <div id="goto_myhome_section">
+            <div id="goto_myhome"></div>
+            <span id="goto_myhome_title">MY PAGE</span>
+            <hr class="vertical">
+          </div>
+
+          <span id="switch_campus_title">SWITCH CAMPUS</span>
+          <div class="campuses">ABC</div>
+          <div class="campuses">DEF</div>
+          <div class="campuses">GHI</div>
+          <div class="campuses">JKL</div>
+          <div class="campuses">MNO</div>
+        </div>
+        <div id="general_homepage_section">
+          <div id="general_homepage"></div>
+          <span id="go_to_home_title">GO TO MAIN HOMEPAGE</span>
+        </div>
+      </div>
+
+
+      <div id = login>LOGIN</div>
+    </header>
+    <main>
+    <section class = "left">
+      <div id = news class = "flip-text" >
+        <div class="inner">
+          <div class="front">
+            新闻
+          </div>
+          <div class="back">
+            NEWS
+          </div>
+        </div>
+      </div>
+      <div id = announcements class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            公告
+          </div>
+          <div class="back">
+            ANNOUNCEMENT
+          </div>
+        </div>
+      </div>
+      <div id = photo_album class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            相册
+          </div>
+          <div class="back">
+            Back Side
+          </div>
+        </div>
+      </div>
+      <div id = p-c-interaction class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            PARENT-CHILD INTERACTION
+          </div>
+          <div class="back">
+            Back Side
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class = "middle">
+      <div class = "content">
+
+      </div> <!--end of content section-->
+    </section>
+    <section class = "right">
+      <div id = carousel class = "no_content"></div>
+      <div id = schedule class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            课表
+          </div>
+          <div class="back">
+            Back Side
+          </div>
+        </div>
+      </div>
+      <div id = restaurant class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            RESTAURANT
+          </div>
+          <div class="back">
+            Back Side
+          </div>
+        </div>
+      </div>
+      <div id = course class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            CLASS
+          </div>
+          <div class="back">
+            Back Side
+          </div>
+        </div>
+      </div>
+      <div id = events class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            EVENTS
+          </div>
+          <div class="back">
+            EVENTS
+          </div>
+        </div>
+      </div>
+      <div id = counseling class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            COUNSELLING
+          </div>
+          <div class="back">
+            Back Side
+          </div>
+        </div>
+      </div>
+      <div id = contact class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            CONTACT
+          </div>
+          <div class="back">
+            Back Side
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    <myhome> <!--We should rename the classes/ ids &#45;&#45; too many repeated -->
+      <section id = "left">
+        <div id = "profile" class = "my_home_section">Profile</div>
+        <div id = "payments" class = "my_home_section">Payments</div>
+        <div id = "feedback" class = "my_home_section">Feedback</div>
+      </section>
+
+      <section id = "middle">
+
+        <div id = "content">
+          <!--Content for my profile-->
+          <div id="profile_content">
+
+            <div class="column">
+              <div id="my_profile_picture">
+                <div id="photo"></div>
+              </div>
+              <div id="my_profile_name"> Yifan Wu </div>
+              <div id="my_profile_share"> </div>
+            </div>
+            <div class="column details">
+              <div id="my_profile_details">
+                <div class="mpd_contents">
+                  <div class="mpd_content_title">Phone</div>
+                  <div class="mpd_content">+46 1234 56789012</div>
+
+                </div>
+                <div class="mpd_contents">
+                  <div class="mpd_content_title">Address</div>
+                  <div class="mpd_content">Kantorsgatan 21 , Lgh 1013, 75421 Uppsala</div>
+                </div>
+                <hr>
+                <div class="mpd_contents">
+
+
+                  <div class="mpd_content_title">Child</div>
+                  <div class="mpd_content">Isabelle Wu</div>
+                </div>
+                <div class="mpd_contents">
+                  <div class="mpd_content_title">Age </div>
+                  <div class="mpd_content">2 years 3 months</div>
+                </div>
+                <div class="mpd_contents">
+                  <div class="mpd_content_title">Teacher</div>
+                  <div class="mpd_content">Ms. Tired Of Life</div>
+                </div>
+                <div class="mpd_contents right_aligned">
+                  <div id="edit_profile">Edit</div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!--Content for Feedback-->
+          <div id="feedback_content">
+            <div id=feedback-wrap>
+              <div id = progress>
+                <div id = bar-container class = progress-bar>
+                  <div id = percentage class = progress-bar><span class = percentage>10%</span></div>
+                </div>
+              </div>
+
+              <div class = inquiry>
+                <div class = ask>1.Overall, my child enjoyed his/her experiences at Smile Kindergarten.</div>
+              </div>
+              <div class = arrow id = arrow-left></div>
+              <div class = arrow id = arrow-right></div>
+              <div class = response>
+
+                <div class = face-wrap>
+
+                  <img id = strongDisagree class = face src = "dummyPictures/face/strongDisagree.png">
+                  <img id = disagree class = face src="dummyPictures/face/disagree.png">
+                  <img id = neutral class = face src="dummyPictures/face/neutral.png">
+                  <img id = agree class = face src="dummyPictures/face/agree.png">
+                  <img id = strongAgree class = face src = "dummyPictures/face/strongAgree.png">
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Content for Courses -->
+          <div id="courses_content">
+            <h2>Ongoing Courses</h2>
+            <div id = courses_wrapper>
+            <div id = courses_container>
+            <div id = cooking class = course>
+              <img class = "course_icon" src="dummyPictures/cooking.png"/>
+              <span class = course_name>Cooking</span>
+              <div class = course_progress>
+                <div class = course_progress_bar></div>
+                <span class = course_h_remaining>10h</span>
+              </div>
+            </div>
+            <div id = ballet class = course>
+              <img class = "course_icon" src="dummyPictures/ballet.png"/>
+              <span class = course_name>Ballet</span>
+              <div class = course_progress>
+                <div class = course_progress_bar></div>
+                <span class = course_h_remaining>13h</span>
+              </div>
+            </div>
+            <div id = art class = course>
+              <img class = "course_icon" src="dummyPictures/art.png"/>
+              <span class = course_name>Art</span>
+              <div class = course_progress>
+                <div class = course_progress_bar></div>
+
+              </div>
+              <span class = course_h_remaining>4h</span>
+            </div>
+            </div>
+            <img id = course_image src = "dummyPictures/carouselDummy0.jpg"/>
+            </div>
+
+            <h2>Upcoming Courses</h2>
+            <div id = no_upcoming>you are not registered to any upcoming courses yet. &nbsp;<a id = "see_courses" href = "#"> See upcoming courses</a></div>
+
+          </div>
+
+          <!-- Content for Attendance -->
+          <div id="attendance_content">
+            <div id = calendar-wrap>
+              <div class = month>
+                <ul class = month-name>
+                  <li class= prev>&#10094;</li>
+                  <li class= next>&#10095;</li>
+                  <div id=month-title>August&nbsp;&nbsp;<span>2020</span></div>
+                </ul>
+              </div>
+
+
+              <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+              </ul>
+
+              <ul class="days">
+                <!-- <li class="prev-date">27</li>
+                <li class="prev-date">28</li>
+                <li class="prev-date">29</li>
+                <li class="prev-date">30</li>
+                <li class="prev-date">31</li> -->
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+
+                <li>10</li>
+                <li>11</li>
+                <li class= today><span>12</span></li>
+                <li><span>13</span></li>
+                <li><span>14</span></li>
+
+                <li><span>17</span></li>
+                <li><span>18</span></li>
+                <li>19</li>
+                <li><span>20</span></li>
+                <li><span>21</span></li>
+
+                <li><span>24</span></li>
+                <li><span>25</span></li>
+                <li><span>26</span></li>
+                <li><span>27</span></li>
+                <li><span>28</span></li>
+
+                <li><span>31</span></li>
+                <li class="next-date">1</li>
+                <li class="next-date">2</li>
+                <li class="next-date">3</li>
+                <li class="next-date">4</li>
+              </ul>
+            </div>
+
+            <div class=modal-wrap>
+              <div class= modal-form>
+                <div class=leave-form>
+                  <span class= close>&times;</span>
+                  <div class=leave-date><span><b>&nbsp;&nbsp;&nbsp;Leave date</b></span></div>
+                  <div class=modal-box class=from><span>&nbsp;&nbsp;&nbsp;From</span>
+                    <input type=time id=from-time  />
+                  </div>
+                  <div class=modal-box class=to><span>&nbsp;&nbsp;&nbsp;To</span>
+                    <input type=time id=to-time  />
+                  </div>
+                  <div class=leave-reason>
+                    <div class=reason style="display: inline-block"><span>&nbsp;&nbsp;&nbsp;Reason</span></div>
+                    <input type=text id=leave-reason style="width:160px"/>
+                    <div id=submit><button >submit</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=confirm-wrap>
+              <div class=leave-form>
+                <div class= confirm-form>
+                  <span class= close>&times;</span>
+                  <div class=leave-date><span><b>&nbsp;&nbsp;&nbsp;Leave date</b></span></div>
+                  <div class=confirm-box class=from><span>&nbsp;&nbsp;&nbsp;From</span>
+                    <div class=confirm-from-time></div>
+                  </div>
+                  <div class=confirm-box class=to><span>&nbsp;&nbsp;&nbsp;To</span>
+                    <div class=confirm-to-time></div>
+                  </div>
+                  <div id="cancel"><button>Cancel</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Content for Payments-->
+          <div id="payments_content">
+
+            <h2>Pending Payment</h2>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Payment</th>
+              </tr>
+              <tr>
+                <td>2/7/2020</td>
+                <td>18:46</td>
+                <td>Course registration (2020 Autumn)</td>
+                <td>CNY 15,000</td>
+                <td><button class = "btn">Pay</button></td>
+              </tr>
+              <tr>
+                <td>21/7/2020</td>
+                <td>11:16</td>
+                <td>Spring field trip</td>
+                <td>CNY 1,000</td>
+                <td><button class = "btn">Pay</button></td>
+              </tr>
+              <tr>
+                <td>01/8/2020</td>
+                <td>09:16</td>
+                <td>Food service (Autumn 2020)</td>
+                <td>CNY 3,000</td>
+                <td><button class = "btn">Pay</button></td>
+              </tr>
+              <tr>
+                <td>04/8/2020</td>
+                <td>18:35</td>
+                <td>Weekend event</td>
+                <td>CNY 500</td>
+                <td><button class = "btn">Pay</button></td>
+              </tr>
+              <tr>
+                <td>12/8/2020</td>
+                <td>14:18</td>
+                <td>Field trip</td>
+                <td>CNY 1,200</td>
+                <td><button class = "btn">Pay</button></td>
+              </tr>
+            </table>
+            <br>
+            <!--animated downarrow-->
+            <div class="container">
+              <div class="scrollArrow"></div>
+            </div>
+
+            <h2>Payment History</h2>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Contract (PDF)</th>
+              </tr>
+              <tr>
+                <td>2/7/2020</td>
+                <td>15:12</td>
+                <td>Course registration (2020 Autumn)</td>
+                <td>CNY 15,000</td>
+                <td><button class = "btn">Download</button></td>
+              </tr>
+              <tr>
+                <td>21/7/2020</td>
+                <td>05:18</td>
+                <td>Spring field trip</td>
+                <td>CNY 1,000</td>
+                <td><button class = "btn">Download</button></td>
+              </tr>
+              <tr>
+                <td>01/8/2020</td>
+                <td>10:11</td>
+                <td>Food service (Autumn 2020)</td>
+                <td>CNY 3,000</td>
+                <td><button class = "btn">Download</button></td>
+              </tr>
+              <tr>
+                <td>04/8/2020</td>
+                <td>12:12</td>
+                <td>Weekend event</td>
+                <td>CNY 500</td>
+                <td><button class = "btn">Download</button></td>
+              </tr>
+              <tr>
+                <td>12/8/2020</td>
+                <td>08:41</td>
+                <td>Field trip</td>
+                <td>CNY 1,200</td>
+                <td><button class = "btn">Download</button></td>
+              </tr>
+            </table>
+
+
+          </div>
+
+          <!--cute baby section-->
+          <div id = "cute_baby_content">
+            <!--Ability test content-->
+            <!--nav buttons and navbar-->
+            <div id = navigationButtons>
+              <button class="navbtnDaily">Daily Data
+              </button>
+              <button class="navbtnAbility">Ability Test
+              </button>
+              <button class="navbtnPhsysical">Physical Development
+              </button>
+              <br>
+              <a id=arrow-L class="navback"></a>
+              <div class="abilitynav">Physical Milestones</div>
+              <a id=arrow-R class="navforward"></a>
+            </div>
+
+            <!--Ability test physical-->
+            <div class="abilityPhysical">
+              <table>
+                <tr>
+                  <td>Walking on tip toes</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Walking backwards</td>
+                  <td><label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Spinning counter-clockwise</td>
+                  <td><label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kicking a ball</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tummy roll</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!--ability test social-->
+            <div class="abilitySocial">
+              <table>
+                <tr>
+                  <td>Want to act like their friends and seek their approval</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Become jealous of other people spending time with "their" firends</td>
+                  <td><label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Follow the rules most of the time and may critisize kids who don't follow rules</td>
+                  <td><label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Enjoy showing off; they'll sing, dance or be silly to get attention</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>May have tantrums or get angry if they thing they're not being listened to</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!--Ability test Cognitive-->
+            <div class="abilityCognitive">
+              <table>
+                <tr>
+                  <td>Find hidden items</td>
+                  <td><label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Stick with an activity for 15 minutes and finish a short project</td>
+                  <td><label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Spinning counter-clockwise</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Recognize and name colors</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Recognize and name shapes</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!--Ability test Language-->
+            <div class="abilityLanguage">
+              <table>
+                <tr>
+                  <td>Know the letters of the alphabet and letter sounds</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Know that stories have a beginning, middle, and end</td>
+                  <td><label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tell stories, jokes, and riddles, and may understand simple puns</td>
+                  <td><label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Talk about opposites and compare things</td>
+                  <td><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Talk about things that are going to happen and things that have already happened.</td>
+                  <td><label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <form>
+              <textarea>Comments</textarea>
+            </form>
+            <br>
+            </div>
+
+          <!--Notifications section-->
+          <div id="notifications_content">
+            <div class="notification_row">
+              <div class="notification_type">Payment</div>
+              <div class="notification_title">Spring Registration</div>
+              <div class="notification_date">18/08/2020</div>
+            </div>
+            <div class="notification_decsription">The registrations for the spring term are now open. Please use the following link to register for courses.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="notification_row">
+              <div class="notification_type">Payment</div>
+              <div class="notification_title">Class Tour</div>
+              <div class="notification_date">17/08/2020</div>
+            </div>
+            <div class="notification_decsription">The registrations for the class tours are now open. Please use the following link to register for courses.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="notification_row">
+              <div class="notification_type">Cute Baby</div>
+              <div class="notification_title">Weekly Highlight</div>
+              <div class="notification_date">16/08/2020</div>
+            </div>
+            <div class="notification_decsription">The weekly highlights of your baby are now available. Please use the following link to view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+
+          <!--Contact section-->
+          <div id="mycontact_content">
+            <div class="mycontact_column mycontact_labels">
+              <div class="contact_icon"><div id="contact_phone"></div><div class="mycontact_title"> Call us </div></div>
+              <div class="contact_icon"><div id="contact_email"></div> <div class="mycontact_title">E-mail us</div></div>
+              <div class="contact_icon"><div  id="contact_location"></div> <div class="mycontact_title">Visit us</div></div>
+            </div>
+
+            <div class="mycontact_column mycontact_info">
+              <div class="info_divs">+46 1234 78594422</div>
+              <div class="info_divs">skg@gmail.com</div>
+              <div class="info_divs">15 Yemen Road, Yemen</div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="content_view_close"></div>
+      </section>
+
+      <section id = "right">
+        <div id = "cute_baby" class = "my_home_section right_section">cute Baby</div>
+        <div id = "courses" class = "my_home_section right_section">Courses</div>
+        <div id = "attendance" class = "my_home_section right_section">Attendance</div>
+        <div id = "notifications" class = "my_home_section right_section">
+          <div id="notification_display_title">Notifications</div>
+            <div id="notification_homepage_display">
+
+              <div class="notification_row">
+                <div class="notification_type">Payment</div>
+                <div class="notification_title">Spring Registration</div>
+                <div class="notification_date">18/08/2020</div>
+              </div>
+              <div class="notification_row">
+                <div class="notification_type">Payment</div>
+                <div class="notification_title">Class Tour</div>
+                <div class="notification_date">17/08/2020</div>
+              </div>
+              <div class="notification_row">
+                <div class="notification_type">Cute Baby</div>
+                <div class="notification_title">Weekly Highlight</div>
+                <div class="notification_date">16/08/2020</div>
+              </div>
+            </div>
+        </div>
+        <div  id= "mycontact" class = "my_home_section right_section">Contact</div>
+      </section>
+    </myhome>
+  </div>
+  </body>
+</html>
